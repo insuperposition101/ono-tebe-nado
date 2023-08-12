@@ -52,12 +52,42 @@ body {
   position: relative;
 }
 
+.cover__title {
+  color: #fff;
+  font-family: Raleway, sans-serif;
+  font-size: 100px;
+  font-weight: 700;
+  letter-spacing: 30px;
+  text-transform: uppercase;
+  padding: 165px 50px 0 50px;
+  margin: 0 auto;
+  z-index: 2;
+  position: relative;
+}
+
 .no-letter-spacing {
   letter-spacing: 0px;
 }
 
 .letter-spacing-extended {
   letter-spacing: 60px;
+}
+
+.aligned-text {
+  display: block;
+  line-height: 115%;
+}
+
+.aligned-text_center {
+  text-align: center;
+  margin-top: 20px;
+  line-height: 100%;
+}
+
+.aligned-text_right {
+  text-align: right;
+  margin-top: 20px;
+  line-height: 100%;
 }
 
 .cover__description {
@@ -100,37 +130,6 @@ body {
   z-index: 2;
 }
 
-.cover__title {
-  color: #fff;
-  font-family: Raleway, sans-serif;
-  font-size: 100px;
-  font-weight: 700;
-  letter-spacing: 30px;
-  text-transform: uppercase;
-  padding-top: 165px;
-  max-width: 1340px;
-  margin: 0 auto;
-  z-index: 2;
-  position: relative;
-}
-
-.aligned-text {
-  display: block;
-  line-height: 115%;
-}
-
-.aligned-text_center {
-  text-align: center;
-  margin-top: 20px;
-  line-height: 100%;
-}
-
-.aligned-text_right {
-  text-align: right;
-  margin-top: 20px;
-  line-height: 100%;
-}
-
 .lots {
   margin: 180px 50px;
 }
@@ -145,9 +144,10 @@ body {
 .more {
   display: block;
   margin-left: 40px;
-  padding-top: 30px;
+  margin-top: 30px;
   font-size: 20px;
   text-underline-offset: 4px;
+  max-width: fit-content;
 }
 
 .lots__card-list {
@@ -162,6 +162,7 @@ body {
 
 .overlay {
   position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   background-color: rgb(0 0 0 / 0.6);
@@ -174,6 +175,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-size: cover;
 }
 
 .card-link {
@@ -198,17 +200,14 @@ body {
 
 .card_type_film {
   background-image: url("../images/card-lot-01.jpg");
-  background-size: cover;
 }
 
 .card_type_book {
   background-image: url("../images/card-lot-02.jpg");
-  background-size: cover;
 }
 
 .card_type_picture {
   background-image: url("../images/card-lot-03.jpg");
-  background-size: cover;
 }
 
 .about {
@@ -255,7 +254,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: start;
-
   margin: 92px 50px;
   font-size: 18px;
   text-underline-offset: 4px;
